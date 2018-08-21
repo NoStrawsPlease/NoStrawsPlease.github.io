@@ -67,7 +67,7 @@ h6 {
     text-decoration: none;
     display: block;
     margin: 20px auto;
-    width: 30%;
+    width: 20em;
     border-radius: 4px;
 }
 .btn4:hover, .btn4:link:hover, .btn4:visited:hover {
