@@ -1,8 +1,6 @@
 html, body { 
-  padding-top: 3.5em;
-  padding-bottom: 3.5em;
-  top: 50;
-  bottom: 50;
+  padding-top: 5%;
+  padding-bottom: 5%;
   background: linear-gradient(
     rgba(0, 0, 0, 0.6), 
     rgba(0, 0, 0, 0.6)
