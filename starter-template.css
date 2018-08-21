@@ -1,0 +1,72 @@
+html, body { 
+  padding-top: 3.5em;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.6), 
+    rgba(0, 0, 0, 0.6)
+  ), url("turtle.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #ffffff;
+}
+.starter-template1 {
+  padding: 2rem 0rem;
+  text-align: center;
+}
+.starter-template2 {
+  margin: -1.5rem 0rem;
+  text-align: center;
+}
+.starter-template3 {
+  margin: 7rem 0rem;
+  text-align: center;
+}
+.starter-template4 {
+  margin: -5rem 0rem;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Avenir', sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+}
+.bolded {
+  font-family: 'Avenir', sans-serif;
+  font-weight: 800 !important;
+}
+
+.underline {
+  padding-bottom: 1px !important;
+  border-bottom: 1px solid #ffffff;
+}
+
+h6 {
+  font-family: 'Avenir', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* BUTTON 4 */
+.btn4, .btn4:link, .btn4:visited {
+ font-family: 'Avenir', sans-serif !important;
+ font-size: 14px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 2px !important;
+  background: #006837 !important;
+  color: #ffffff !important;
+  transition: box-shadow .18s ease;
+    padding: 12px 20px;
+    text-decoration: none;
+    display: block;
+    margin: 20px auto;
+    width: 30%;
+    border-radius: 4px;
+}
+.btn4:hover, .btn4:link:hover, .btn4:visited:hover {
+  box-shadow: inset 0 0 0 5px #004b28;
+}
