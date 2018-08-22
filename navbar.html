@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -16,52 +16,45 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <!-- Custom styles for this template -->
-    <link href="starter-template.css" rel="stylesheet" type="text/css">
     <link href="navbar-top-fixed.css" rel="stylesheet" type="text/css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js" ></script>
     <link rel="stylesheet" href="https://cdn.rawgit.com/tonystar/bootstrap-float-label/v4.0.2/bootstrap-float-label.min.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
-</head>
+  </head>
 
   <body>
 
-      <nav style="background: #009952 !important;" class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-          <a class="navbar-brand bolded uppercase" href="#">No Straws, Please!</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="#">Fixed navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+        <form class="form-inline mt-2 mt-md-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
 
     <main role="main" class="container">
-
-      <div class="starter-template1">
-        <h1><span class="bolded">Over 1 million sea animals are losing their lives because of us each year.</span></h1>
+      <div class="jumbotron">
+        <h1>Navbar example</h1>
+        <p class="lead">This example is a quick exercise to illustrate how fixed to top navbar works. As you scroll, it will remain fixed to the top of your browser's viewport.</p>
+        <a class="btn btn-lg btn-primary" href="../../components/navbar/" role="button">View navbar docs &raquo;</a>
       </div>
-      <div class="starter-template2">
-        <h1><span class="bolded">One of the main reasons?</span> <span class="underline">Plastic straws.</span></h1>
-      </div>
-      <div class="starter-template3">
-        <h1><span class="bolded">Now, it's time to do your part!</span></h1>
-        <a href="#" class="btn4">HELP TODAY <span style="font-size: 17px;">&#x1F422;</span></a>
-      </div>
-      <div class="starter-template4" style="opacity: 0.75;">
-        <h6><span class="underline">Not so fun fact:</span><br><br>In the United States, <span class="bolded">about 500 million straws</span> are used each day. Most of them end up in "our" oceans.</h6>
-      </div>
-
-    </main><!-- /.container -->
+    </main>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->

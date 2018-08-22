@@ -1,4 +1,5 @@
 html, body { 
+  font-family: 'Avenir', sans-serif;
   padding-top: 50px !important;
   padding-bottom: 70px !important;
   height: 100%;
@@ -53,6 +54,13 @@ h1 {
 .underline {
   padding-bottom: 1px !important;
   border-bottom: 1px solid #ffffff;
+}
+
+.uppercase {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 95%;
+  margin-top: 2px;
 }
 
 h6 {
