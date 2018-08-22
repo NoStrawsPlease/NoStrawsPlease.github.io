@@ -19,6 +19,7 @@ html {
 }
 
 body {
+  padding-top: 70px !important;
   display: table-cell;
   vertical-align: middle;
 }
