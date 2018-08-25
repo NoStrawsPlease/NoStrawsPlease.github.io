@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  padding-top: 80px !important;
+  padding-top: 180px !important;
   display: table-cell;
   vertical-align: middle;
 }
@@ -259,4 +259,8 @@ html,body {
 
 .navbar-collapse.collapse.in {
     display: block!important;
+  }
+
+  button {
+      border: none !important;
   }

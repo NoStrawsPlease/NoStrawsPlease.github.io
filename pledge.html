@@ -21,6 +21,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js" ></script>
     <link rel="stylesheet" href="https://cdn.rawgit.com/tonystar/bootstrap-float-label/v4.0.2/bootstrap-float-label.min.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
+
+    <script>
+    var $form = $('form#test-form'),
+    url = 'https://script.google.com/macros/s/AKfycbzJgz4iJP3FQaxoz8aH1GtpeGnLS02IaMtPBrBa4Bbn1nWq2SU/exec'
+
+    $('#submit-form').on('click', function(e) {
+    e.preventDefault();
+    var jqxhr = $.ajax({
+        url: url,
+        method: "GET",
+        dataType: "json",
+        data: $form.serializeObject()
+    }).success(
+        // do something
+    );
+    })
+    </script>
 </head>
 
   <body>
@@ -54,29 +71,29 @@
 
     <div style="margin-top: -200px;" class="row">
         <div class="col-md-6 col-sm-12">
-            <h1><span class="bolded bheader">Help us create a cleaner and safer planet for all.</span></h1>
+            <h1><span class="bolded bheader">Help us create a cleaner and safer planet for everyone.</span></h1>
             <p style="margin-left: -20px;color: #fff;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus mauris ultrices eros in cursus turpis massa tincidunt dui. Risus at ultrices mi tempus imperdiet nulla malesuada pellentesque elit.</p>
         </div>
         <div class="col-md-6 col-sm-12">
             <div class="halfpage">
             <h1 class="bolded">Take the Pledge</h1>
-            <form>
+            <form id="test-form">
                 <div class="row form-rows">
                     <div class="col">
-                    <input id="firstname" type="text" class="form-control" placeholder="First Name">
+                    <input name="First Name" id="firstname" type="text" class="form-control" placeholder="First Name">
                     </div>
                     <div class="col">
-                    <input id="lastname" type="text" class="form-control" placeholder="Last Name">
+                    <input name="Last Name" id="lastname" type="text" class="form-control" placeholder="Last Name">
                     </div>
                 </div>
                 <div class="row form-rows">
                     <div class="col">
-                    <input id="email" type="email" class="form-control" placeholder="Email Address">
+                    <input name="Email" id="email" type="email" class="form-control" placeholder="Email Address">
                     </div>
                 </div>
                 <div class="row form-rows">
                         <div class="col">
-                        <select id="state" class="form-control" name="state">
+                        <select id="state" class="form-control" name="State">
                                 <option selected disabled>Select</option>
                                 <option value="AL">Alabama</option>
                                 <option value="AK">Alaska</option>
@@ -132,7 +149,17 @@
                             </select>
                         </div>
                         <div class="col">
-                        <input id="zipcode" type="number" class="form-control" placeholder="Zip Code">
+                        <input name="Zip Code" id="zipcode" type="number" class="form-control" placeholder="Zip Code">
+                        </div>
+                    </div>
+                    <div class="row form-rows">
+                        <div class="col">
+                        <textarea name="Additional Signers" style="min-height: 100px;" id="additional" type="text" class="form-control" placeholder="Additional Signers"></textarea>
+                        </div>
+                    </div>
+                    <div class="row form-rows">
+                        <div class="col">
+                        <button style="margin-top: 0px !important; width:100%;" id="submit-form" type="submit" class="btn4 form-control">Pledge</button>
                         </div>
                     </div>
             </form>
