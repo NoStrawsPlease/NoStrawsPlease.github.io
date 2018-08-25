@@ -13,6 +13,8 @@ html, body {
        animation: fadein 1s;
 }
 html {
+  position: relative;
+  min-height: 100%;
   display: table;
   width: 100%;
   overflow-x: hidden;
@@ -147,13 +149,15 @@ p {
 }
 
 footer {
-  position: fixed;
+  position: absolute;
   bottom: 0;
-  background-color: #fff;
-  margin-left: 50px;
+  right: 0;
   text-align: center;
   padding-bottom: 10px;
   opacity: 0.3;
+  height: 30px;
+  width: 50%;
+  overflow: hidden;
 }
 
 @keyframes fadein {
@@ -241,6 +245,14 @@ html,body {
         margin-bottom: 30px;
     }
     footer {
-        margin-left: 0px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        text-align: center;
+        padding-bottom: 10px;
+        opacity: 0.3;
+        height: 30px;
+        width: 100%;
+        overflow: hidden;
       }
 }
