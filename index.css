@@ -161,3 +161,7 @@ footer {
 sup {
   letter-spacing: 1px;
 }
+
+.navbar-collapse.collapse.in {
+  display: block!important;
+}
