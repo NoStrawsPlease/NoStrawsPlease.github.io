@@ -21,23 +21,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js" ></script>
     <link rel="stylesheet" href="https://cdn.rawgit.com/tonystar/bootstrap-float-label/v4.0.2/bootstrap-float-label.min.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
+    <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
 
-    <script>
-    var $form = $('form#test-form'),
-    url = 'https://script.google.com/macros/s/AKfycbzJgz4iJP3FQaxoz8aH1GtpeGnLS02IaMtPBrBa4Bbn1nWq2SU/exec'
-
-    $('#submit-form').on('click', function(e) {
-    e.preventDefault();
-    var jqxhr = $.ajax({
-        url: url,
-        method: "GET",
-        dataType: "json",
-        data: $form.serializeObject()
-    }).success(
-        // do something
-    );
-    })
-    </script>
 </head>
 
   <body>
@@ -77,23 +62,23 @@
         <div class="col-md-6 col-sm-12">
             <div class="halfpage">
             <h1 class="bolded">Take the Pledge</h1>
-            <form id="test-form">
+            <form id="myform" class="gform" method="POST" data-email="foundifyinfo@gmail.com" action="https://script.google.com/macros/s/AKfycbwKQyN9sM8C2MSVBfQoQ2HLb-i6uajTXZO8elYtBw/exec">
                 <div class="row form-rows">
                     <div class="col">
-                    <input name="FirstName" id="firstname" type="text" class="form-control" placeholder="First Name">
+                    <input required name="FirstName" id="firstname" type="text" class="form-control" placeholder="First Name">
                     </div>
                     <div class="col">
-                    <input name="LastName" id="lastname" type="text" class="form-control" placeholder="Last Name">
+                    <input required name="LastName" id="lastname" type="text" class="form-control" placeholder="Last Name">
                     </div>
                 </div>
                 <div class="row form-rows">
                     <div class="col">
-                    <input name="Email" id="email" type="email" class="form-control" placeholder="Email Address">
+                    <input required name="Email" id="email" type="email" class="form-control" placeholder="Email Address">
                     </div>
                 </div>
                 <div class="row form-rows">
                         <div class="col">
-                        <select id="state" class="form-control" name="State">
+                        <select required id="state" class="form-control" name="State">
                                 <option selected disabled>Select</option>
                                 <option value="AL">Alabama</option>
                                 <option value="AK">Alaska</option>
@@ -149,7 +134,7 @@
                             </select>
                         </div>
                         <div class="col">
-                        <input name="ZipCode" id="zipcode" type="number" class="form-control" placeholder="Zip Code">
+                        <input required name="ZipCode" id="zipcode" type="number" class="form-control" placeholder="Zip Code">
                         </div>
                     </div>
                     <div class="row form-rows">
@@ -159,10 +144,11 @@
                     </div>
                     <div class="row form-rows">
                         <div class="col">
-                        <button style="margin-top: 0px !important; width:100%;" id="submit-form" type="submit" class="btn4 form-control">Pledge</button>
+                        <button onclick="window.location='pledge-thanks.html';" style="margin-top: 0px !important; width:100%;" id="submit-form" type="submit" class="btn4 form-control">Pledge</button>
                         </div>
                     </div>
             </form>
+            <div style="display: none;" class="thankyou_message">Thank you for pledging!</div>
             </div>
             
         </div>
